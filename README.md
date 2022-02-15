@@ -16,6 +16,7 @@ Generate SSH public and private keys with puttygen.exe and save them in the fold
 Edit file terraform.tfvars in folder "terraform" and put your public key like "ssh-rsa …" into it as a value of my_public_key. 
 In addition, you should set your current IP address or your network in ip_admin.
 
+    cd terraform
     terraform init
     terraform plan -out main.tfplan
     terraform apply main.tfplan
